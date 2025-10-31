@@ -45,7 +45,7 @@ jobs:
         with:
           # This path MUST match your build output folder
           # It's 'dist' for Vite, or 'build' for Create React App
-          path: ./dist
+          path: ./build
 
   # Deployment job
   deploy:
