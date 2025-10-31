@@ -1,8 +1,8 @@
 {
-      "name": "Personal Engineering Blog",
+      "name": "personal-engineering-blog",
       "version": "0.1.0",
       "private": true,
-      "homepage": "https://www.williamlab.study/",
+      "homepage": "https://will12124.github.io/PersonalEngineeringBlog/",
       "dependencies": {
             "@radix-ui/react-accordion": "^1.2.3",
             "@radix-ui/react-alert-dialog": "^1.1.6",
