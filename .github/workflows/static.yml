@@ -33,13 +33,12 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build
-        run: npm run build # This command creates the 'dist' folder
+        run: npm run build # This command creates the 'build' folder
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # This path MUST match your build output folder
-          # It's 'dist' for Vite, or 'build' for Create React App
-          path: ./build
+          path: ./build # <-- THIS IS THE CHANGE FOR REACT
 
   # Deployment job
   deploy:
