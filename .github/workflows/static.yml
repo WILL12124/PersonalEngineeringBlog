@@ -28,17 +28,24 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 18 # Use a version that matches your project
+          node-version: 18 # You can change this to your project's Node version
           cache: 'npm'
       - name: Install dependencies
         run: npm install
+      
+      # This is the new step to fix the permission error
+      - name: Fix Vite Permissions
+        run: chmod +x ./node_modules/.bin/vite
+
       - name: Build
-        run: npm run build # This command creates the 'build' folder
+        run: npm run build
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # This path MUST match your build output folder
-          path: ./build # <-- THIS IS THE CHANGE FOR REACT
+          # It's 'dist' for Vite, or 'build' for Create React App
+          path: ./dist
 
   # Deployment job
   deploy:
