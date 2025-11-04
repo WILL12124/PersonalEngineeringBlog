@@ -23,15 +23,16 @@ export function HomePage({ onNavigate }: HomePageProps) {
           <div className="space-y-4 text-gray-400 leading-relaxed">
             <p>Hello,</p>
             <p>
-              Welcome to my corner of the internet. This is where I document my engineering 
-              journey—notes on things I've learned, tools that make my workflow better, 
+              Welcome to my website. I got a bit interested in web developing after the Newhacks hackathon which we built a interactive map. The intension of this website is where I document my engineering
+              journey—notes on things I've learned, tools that make my workflow better,
               and occasional photographs.
             </p>
             <p>
-              Everything here is a work in progress, much like the projects I build. 
-              Feel free to explore, and if something resonates with you, don't hesitate to reach out.
+              I used Figma to design the website which used Vite with React and TailwindCSS for development. The source code is available on my GitHub if you're curious about the implementation.
+              It is amazing how much can be accomplished with AI, and the more I dive into web, the more I find how amazing tools can help oneself.
+              Feel free to explore, and if something resonates with you, don't hesitate to reach out using the contact information below.
             </p>
-            <p className="text-gray-500">— Engineer</p>
+            <p className="text-gray-500">— William</p>
           </div>
         </section>
 
